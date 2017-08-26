@@ -1,0 +1,162 @@
+<!-- http://blacktie.co/2014/07/dashgum-free-dashboard/ -->
+<!-- http://linuxdash.afaqtariq.com/#/system-status -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projeto</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Ruda" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <?php
+    echo "teste";
+  ?>
+
+  <header class="black-bg">
+    <a href="#" class="header-menu">
+      <i class="material-icons">menu</i>
+    </a>
+    <a href="#" class="header-title">VirtualEasy</a>
+    <nav class="header-menu-right">
+      <a href="#"><i class="material-icons">date_range</i></a>
+      <a href="#"><i class="material-icons">notifications</i></a>
+    </nav>
+  </header>
+  <main>
+    <h1>VirtualEasy</h1>
+    <p class="font">VirtualEasy é uma plataforma Web desenvolvida para facilitar a criação de maquinas virtuais.Para isso ele utiliza da ferramenta Vagrant e do virtualbox-5.0. Caso ainda não tenha instalado as ferramentas ou a versão do VirtualBox esteja acima do 5.0, você pode fazer download clicando nas imagens abaixo </p>
+    <div class="Virtualization">
+      <a href="https://www.vagrantup.com/"><img id="vagrant" src="img/vagrant.png" alt="vagrant"></a>
+      <a href="https://www.virtualbox.org/wiki/Download_Old_Builds"><img id="virtualbox" src="img/virtualbox.png" alt="virtualbox"></a>
+    </div>
+        <div class="container">
+          <h1>Maquina Virtual</h1>
+          <p class="font">Crie sua maquina virtual preenchendo os campos conforme sua necessidade</p>
+      <section class="white-panel col col3">
+        <header class="white-header">
+          MACHINES
+        </header>
+        <main>
+          <i class="material-icons">info_outline</i>
+          <table id="general-info">
+            <tbody class="teste">
+              <tr>
+                <td>  <div class="radio">
+                    <input id="Ubuntu Trusty  x64" name="vagrantfile" value="/Ubuntu Trusty  x64" type="radio" checked>
+                    <label for="Ubuntu Trusty  x64">
+                     Ubuntu Trusty  x64
+                    </label>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                    <input id="CentOS 7 x64" name="vagrantfile" value="/CentOS 7 x64" type="radio">
+                    <label for="CentOS 7 x64">
+                      CentOS 7 x64</td>
+
+              </tr>
+              <tr>
+                <td>
+                    <input id="Kali Linux 2.0" name="vagrantfile" value="/Kali Linux 2.0" type="radio">
+                    <label for="Kali Linux 2.0">
+                      Kali Linux 2.0</td>
+
+              </tr>
+              <tr>
+                <td>
+                    <input id="Debian/jessie64" name="vagrantfile" value="/Debian/jessie64" type="radio">
+                    <label for="Debian/jessie64">
+                      Debian/jessie64
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                    <input id="Fedora 19 x86_64" name="vagrantfile" value="/Fedora 19 x86_64" type="radio">
+                    <label for="Fedora 19 x86_64">
+                      Fedora 19 x86_64
+                </td>
+
+              </tr>
+            </div>
+            </tbody>
+          </table>
+        </main>
+      </section>
+
+      <section class="white-panel col col3">
+        <header class="white-header">
+          +ADD
+        </header>
+        <main>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#"><img id="apache" src="img/apache_pb2.png" alt="apache"></a>
+                </td>
+                <td>
+                  <input name="apache" value="apache" type="checkbox">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#"><img id="php" src="img/php.png" alt="php"></a>
+                </td>
+                <td>
+                  <input name="apache" value="apache" type="checkbox">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#"><img id="mysql" src="img/mysql.svg" alt="mysql"></a>
+                </td>
+                <td>
+                  <input name="apache" value="apache" type="checkbox">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </main>
+      </section>
+
+      <section id="memory-status" class="white-panel col col3">
+        <header class="white-header">
+          MACHINE INFO
+        </header>
+        <main>
+          <form action="recebe-mensagem.html" method="post">
+
+
+                  <div>
+                    <label for="address">Ip Address</label><br>
+                    <input type="text" placeholder="192.168.0.1"  id="address">
+                  </div>
+                  <div>
+                    <label for="memory">Memory (MB)</label><br>
+                    <input type="text" placeholder="512" id="memory">
+                  </div>
+                  <div>
+                    <label for="host">Host Name</label><br>
+                    <input type="text" id="host">
+                  </div>
+                  <div>
+                    <label for="mensagem">CPU's</label><br>
+                    <input type="text" placeholder="1" id="cpu">
+                  </div>
+
+                <input type="submit" value="Criar">
+         </form>
+        </main>
+      </section>
+    </div>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>
