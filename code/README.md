@@ -1,4 +1,5 @@
 VirtualEasy
 
 VirtualEasy é uma plataforma Web desenvolvida para facilitar a criação de maquinas virtuais.
-![tela de login](code/captura de tela de 2017-08-26 10-04-24.png)
+
+![tela de login](code/captura_de_tela_de_2017-08-26_10-04-24.png)
